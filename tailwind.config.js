@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
       'sm': '300px',
@@ -41,6 +39,5 @@ module.exports = {
         '1': 'repeat(1, minmax(0, 264px))',
       }
     },
-  },
-  plugins: [],
+  }
 }
