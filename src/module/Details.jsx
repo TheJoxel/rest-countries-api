@@ -49,7 +49,7 @@ export const Details = () => {
     <div className='h-screen'>
       <GridLayout>
         <div className='sm:col-span-4 md:col-span-8 lg:col-span-12'>
-          <div onClick={()=> navigate('/')} className={`sm:mt-8 mt-20 h-10 w-[136px] rounded-[5px] shadow-3xl flex justify-center items-center gap-2 cursor-pointer ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`} >
+          <div onClick={()=> navigate('/')} className={`sm:mt-8 mt-20 h-10 w-[136px] rounded-[5px] shadow-md flex justify-center items-center gap-2 cursor-pointer ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`} >
             <BsArrowLeft className={`${isDarkTheme ? "text-tx-dark" : "text-tx-lite"}`}/>
             <p className={`text-mode font-light ${isDarkTheme ? "text-tx-dark" : "text-tx-lite"}`}>Back</p>
           </div>
@@ -83,7 +83,7 @@ export const Details = () => {
             {ArrayButton?.map((flag, index)=>{
               return(
                 <div key={index}>
-                  { flag.titleBoder ? <div className={`h-[28px] w-[96px] rounded-[5px] shadow-3xl flex justify-center items-center gap-2 ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`}>
+                  { flag.titleBoder ? <div className={`h-[28px] w-[96px] rounded-[5px] shadow-md flex justify-center items-center gap-2 ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`}>
                     <p className={`text-select font-light ${isDarkTheme ? "text-tx-dark" : "text-tx-lite"}`}>{flag.titleBoder}</p>
                   </div> : null}
                 </div>

@@ -33,11 +33,11 @@ export const Opcion = () => {
 
   return (
     <div className='relative'>
-        <div className={`flex justify-between items-center py-[18px] px-[24px] shadow-3xl rounded-[5px] cursor-pointer ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`} onClick={handleOnClick}>
+        <div className={`flex justify-between items-center py-[18px] px-[24px] shadow-md rounded-[5px] cursor-pointer ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`} onClick={handleOnClick}>
             <p className={`text-select font-light ${isDarkTheme ? "text-tx-dark" : "text-tx-lite"}`}>{option}</p>
             {select ? <BsChevronUp className={`${isDarkTheme ? "text-tx-dark" : "text-tx-lite"}`}/> : <BsChevronDown className={`${isDarkTheme ? "text-tx-dark" : "text-tx-lite"}`}/>}
         </div>
-        { select && <div className={`w-full mt-[4px] py-[17px] px-[24px] shadow-3xl rounded-[5px] absolute ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`}>
+        { select && <div className={`w-full mt-[4px] py-[17px] px-[24px] shadow-md rounded-[5px] absolute ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`}>
           {ArrayOption.map((card, index)=>{
             return(
               <p className={`text-select font-light cursor-pointer mb-[9px] last:mb-0  ${isDarkTheme ? "text-tx-dark" : "text-tx-lite"}`} onClick={()=>selectOption(card.continent) } key={index}>{card.continent}</p>

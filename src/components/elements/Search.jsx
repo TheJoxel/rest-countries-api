@@ -18,7 +18,7 @@ export const Search = () => {
 
   return (
     <div>
-        <input type="text" onChange={handleChange} value={search} placeholder='Search for a country...' className={`outline-none w-full text-select font-light py-[18px] px-[24px] shadow-3xl rounded-[5px] ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`}/>
+        <input type="text" onChange={handleChange} value={search} placeholder='Search for a country...' className={`outline-none w-full text-select font-light py-[18px] px-[24px] shadow-md rounded-[5px] ${isDarkTheme ? "bg-bg-card" : "bg-bg-white"}`}/>
     </div>
   )
 }

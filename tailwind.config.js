@@ -29,9 +29,6 @@ module.exports = {
         titleCard: ['18px', '25px'],
         titleDetail: ['31px', '42px'],
       },
-      boxShadow: {
-        '3xl': 'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;',
-      },
       gridTemplateColumns: {
         '4': 'repeat(4, minmax(0, 264px))',
         '3': 'repeat(3, minmax(0, 264px))',
